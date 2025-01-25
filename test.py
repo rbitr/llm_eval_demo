@@ -5,7 +5,7 @@ with open("prompts.txt") as f:
 
 features = [NumberOfSentences(), BigramFreq(("rolling", "hills"))]
 
-llm = HF_LLM(model="/home/andrew/code/2005/hf/Qwen2.5-0.5B-Instruct",
+llm = HF_LLM(model="Qwen/Qwen2.5-0.5B-Instruct",
 	     max_tokens=128,
 	     temperature=1)
 
